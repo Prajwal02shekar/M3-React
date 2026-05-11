@@ -123,3 +123,57 @@ src
     -> Inside src folder you have to maintain two important files i.e.
     1.main.jsx -> it is a root file
     2.App.jsx  -> it is a parent /top level component
+
+
+-----> JSX <----
+-> JSX stands for JavascriptXML.
+-> It is a combination of Javascript and XML.
+-> It is a template language.
+-> JSX looks like html but not html.
+-> It is more stricter than html.
+-> It is used to create component.
+-> React always uses component.
+
+---> Rules of JSX <---
+
+1.JSX always return only one element.
+    -> If we have more than one element, we have to enclose in one parent element along with parenthesis.
+    -> We can also use <Fragment></Fragment>  or <></>
+
+2. Elements are case sensitive
+3. We can use JS code in JSX by using expression
+4. Common keywords in js and html will be changed in jsx 
+    ->for --> htmlFor
+    ->class ->className
+5. Every element should be closes
+    -> paired way <hr></hr>
+    -> self clossing way <hr/>
+
+
+-----> Components <-----
+-> Components are the core building blocks of react application [UI]
+-> Components are nothing but block of code,we have to export and import to make it reusuability.
+-> Web pages are divided into multiple components and then we will be joinig together in the parent component [App.jsx]
+-> Components are reusable.
+
+
+---> Rules of Component <---
+1.Component names should start with capital letter only.
+2.Component file should have to be saved with an extension of .jsx
+3.We can represent components in 2 ways
+    -> Paired tag <App></App>
+    -> Self closing tag </App>
+
+
+----> Types of component <---
+1.Class based component [statefull component]
+2.Function based component [stateless component]
+
+---> NOTE <--
+1.In CBC, there is a one built in property called state.So CBC are called as Statefull Component
+
+2.In CBC, there is a no property called state.So FBC are called as Stateless Component
+
+
+
+
