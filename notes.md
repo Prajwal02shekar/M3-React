@@ -177,3 +177,32 @@ src
 
 
 
+-------> PROPS <------
+-> In short we call properties as props.
+-> Props are objects in react js.
+-> Props are used to share the information between the components.
+-> Props is a way of sharing data from one component to another coponent [Parent to Child]
+-> Props follows unidirectional flow i.e from parent component to child component.
+-> Props are immutalble,it means once data is passed from parent component it can't be changed in child component.
+
+
+---> Props Children <---
+-> It is a way of sending JSX elements from parent component to child component
+-> If we pass any Children, In props default key will be created as children and all JSX elements store in this.
+
+
+---> Default Props <---
+-> If the data has not been sent then the component will consider this data.
+-> The defaultProps in a react property that allows you to set default values for objects.
+
+
+
+---> Props Drilling <--
+-> It is a process of sending data from one component to another component and so on...
+
+
+---------> STATES <-------
+
+
+
+
