@@ -44,40 +44,56 @@
 
 
 //?  Example 2
-// import React, { Component } from 'react'
+import React, { Component } from 'react'
 
-// export default class Example1 extends Component {
-//     constructor() {
-//         super();
-//         this.state = {
-//             emp1: {
-//                 name: "Ajith",
-//                 age: 22,
-//                 address: "Ajith Palace",
-//                 designation: "Developer"
-//             },
-//             emp2: {
-//                 name: "Dishanth",
-//                 age: 21,
-//                 address: "Dishanth Palace",
-//                 designation: "Tester"
-//             }
-//         }
-//     }
-//     render() {
-//         return (
-//             <div>
-//                 <h1>Emp 1 Details</h1>
+export default class Example1 extends Component {
+  constructor() {
+    super();
+    this.state = {
+      emp1: {
+        name: "Ajith",
+        age: 22,
+        address: "Ajith Palace",
+        designation: "Developer"
+      },
+      emp2: {
+        name: "Dishanth",
+        age: 21,
+        address: "Dishanth Palace",
+        designation: "Tester"
+      }
+    }
+  }
 
-//                 <h3>My name is {this.state.emp1.name}</h3>
-//                 <h1>Emp 2 Details</h1>
-//                 <h3>My name is {this.state.emp2.name}</h3>
+  handleEmp1 = () => {
+    this.setState({
+      emp1: {
+        name: "Suhas",
+        age: 22,
+        address: "Suhas Palace",
+      }
+    })
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Emp 1 Details</h1>
+        <h3>My name is {this.state.emp1.name}</h3>
+        <h3>My age is {this.state.emp1.age}</h3>
+        <h3>My address is {this.state.emp1.address}</h3>
+        <button onClick={this.handleEmp1}>Change Emp 1 Details</button>
+        <h1>Emp 2 Details</h1>
+        <h3>My name is {this.state.emp2.name}</h3>
+        <h3>My age is {this.state.emp2.age}</h3>
+        <h3>My address is {this.state.emp2.address}</h3>
 
 
-//             </div>
-//         )
-//     }
-// }
+
+      </div>
+    )
+  }
+}
 
 
 
@@ -85,22 +101,24 @@
 //? Update the state object
 //? Initializing state objects with state way
 
-import React, { Component } from 'react'
+// import React, { Component } from 'react'
 
-export default class Example1 extends Component {
+// export default class Example1 extends Component {
 
-    state={
-        myFavFood:"Masala Dosa"
-    }
-    handleFood=()=>{
-            this.setState({myFavFood:"Veg Biryani"})
-    }
-  render() {
-    return (
-      <div>
-            <h1>My fav food is {this.state.myFavFood}</h1>
-            <button onClick={this.handleFood}>Change Food</button>
-      </div>
-    )
-  }
-}
+//   state = {
+//     myFavFood: "Masala Dosa"
+//   }
+//   handleFood = () => {
+//     this.setState({ myFavFood: "Veg Biryani" })
+//   }
+//   render() {
+//     return (
+//       <div>
+//         <h1>My fav food is {this.state.myFavFood}</h1>
+//         <button onClick={this.handleFood}>Change Food</button>
+//       </div>
+//     )
+//   }
+// }
+
+
