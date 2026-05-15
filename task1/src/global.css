@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.videoContainer{
+    height: 500px;
+    width: 900px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playerContainer{
+    height: 400px;
+    width: 600px;
+    border: 2px solid ;
+}
+.playerListComntainer{
+    height: 500px;
+    width: 300px;
+    border: 2px solid;
+}
+.playerList{
+    height: 180px;
+    width: 300px;
+    border: 2px solid;
+}
